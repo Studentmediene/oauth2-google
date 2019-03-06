@@ -6,11 +6,11 @@ use League\OAuth2\Client\Provider\Google;
 
 // Replace these with your token settings
 // Create a project at https://console.developers.google.com/
-$clientId     = 'your-client-id';
-$clientSecret = 'your-client-secret';
+$clientId     = getenv('OAUTH_GOOGLE_CLIENT_ID');
+$clientSecret = getenv('OAUTH_GOOGLE_CLIENT_SECRET');
 
 // Change this if you are not using the built-in PHP server
-$redirectUri  = 'http://localhost:8080/';
+$redirectUri  = getenv('OAUTH_GOOGLE_REDIRECT');
 
 // Start the session
 session_start();

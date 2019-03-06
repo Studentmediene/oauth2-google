@@ -1,5 +1,24 @@
 # Google Provider for OAuth 2.0 Client
 
+## IMPORTANT
+
+This is a fork of the original library, because our system doesn't support PHP 7.x yet, 
+and we need to migrate our Google OAuth 2.0 authentication away from Google Plus to Google Signin. 
+The solution is only intended to be **temporary**, and should be replaced by a more robust solution later.
+
+Differences in library, is that we reference oauth2-client version `1.4`, and that the code has been verified to run on 
+`PHP 5.6`.
+
+## How to test locally
+
+Simply include your env variables in the file `oauth_dev.env` (see `examples/provider.php` for neccessary fields), and run
+
+```bash
+$ docker-compose up
+```
+
+then visit [http://localhost:8888]
+
 [![Join the chat](https://img.shields.io/badge/gitter-join-1DCE73.svg)](https://gitter.im/thephpleague/oauth2-google)
 [![Build Status](https://img.shields.io/travis/thephpleague/oauth2-google.svg)](https://travis-ci.org/thephpleague/oauth2-google)
 [![Code Coverage](https://img.shields.io/coveralls/thephpleague/oauth2-google.svg)](https://coveralls.io/r/thephpleague/oauth2-google)

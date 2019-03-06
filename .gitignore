@@ -6,3 +6,8 @@ testing/
 nbproject/private/
 test/log
 build
+
+oauth_dev.env
+
+.idea
+.vscode
