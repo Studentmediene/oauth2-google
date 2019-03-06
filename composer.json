@@ -19,7 +19,7 @@
     ],
     "minimum-stability": "stable",
     "require": {
-        "league/oauth2-client": "^2.0"
+        "league/oauth2-client": "^1.4"
     },
     "require-dev": {
         "eloquent/phony-phpunit": "^2.0",
